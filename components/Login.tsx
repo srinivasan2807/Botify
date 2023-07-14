@@ -5,7 +5,7 @@ import React from "react";
 
 function Login() {
   return (
-    <div className="bg-[#11A37F] h-screen flex flex-col items-center justify-center text-center">
+    <div className="bg-white h-screen flex flex-col items-center justify-center text-center">
       <Image
         src="/botifylogo.png"
         alt={"Botify-logo"}
@@ -14,7 +14,7 @@ function Login() {
       />
       <button
         onClick={() => signIn("google")}
-        className="text-white font-bold text-3xl animate-pulse"
+        className="text-blue font-bold text-3xl animate-pulse"
       >
         Sign in to use Botify
       </button>
