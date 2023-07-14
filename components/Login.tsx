@@ -7,7 +7,7 @@ function Login() {
   return (
     <div className="bg-[#11A37F] h-screen flex flex-col items-center justify-center text-center">
       <Image
-        src="https://links.papareact.com/2i6"
+        src="/botifylogo.png"
         alt={"Botify-logo"}
         width={300}
         height={300}
