@@ -14,7 +14,7 @@ function Login() {
       />
       <button
         onClick={() => signIn("google")}
-        className="text-blue font-bold text-3xl animate-pulse"
+        className="text-[#2596be] font-bold text-3xl animate-pulse"
       >
         Sign in to use Botify
       </button>
