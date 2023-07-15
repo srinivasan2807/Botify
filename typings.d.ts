@@ -7,3 +7,7 @@ interface Message {
     avatar: string;
   };
 }
+
+interface BotifyResponse {
+	answer: string | null | undefined;
+}

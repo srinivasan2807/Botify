@@ -20,6 +20,7 @@ export default async function handler(
     return;
   }
   const response = await query(prompt, chatId, model);
+
   const promptMessage: Message = {
     text: response || "Sorry! iam unable to give answer for Question!",
     createdAt: admin.firestore.Timestamp.now(),

@@ -25,19 +25,20 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+      <div className="gradient" />
         <SessionProvider session={session}>
           {!session ? (
             <Login />
           ) : (
-            <div className="flex">
+            <div className="flex h-screen ">
               {/* {sidebar} */}
-              <div className="bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
+              <div className="bg-[#202123] w-1/3 h-screen overflow-y-auto">
                 <SideBar />
               </div>
 
               {/* {clientprovider - notifications} */}
               <ClientProvider />
-              <div className="bg-[#343541] flex-1">{children}</div>
+              <div className="bg-[#343541] w-2/3">{children}</div>
             </div>
           )}
         </SessionProvider>

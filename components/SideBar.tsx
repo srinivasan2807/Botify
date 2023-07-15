@@ -22,9 +22,9 @@ function SideBar() {
       <div className="flex-1">
         <div>
           <NewChat />
-          <div className="hidden sm:inline">
+          {/* <div className="hidden sm:inline">
             <ModelSelection />
-          </div>
+          </div> */}
 
           <div className="flex flex-col space-y-2 my-2">
             {loading && (
@@ -50,7 +50,6 @@ function SideBar() {
             height={48}
             className="rounded-full cursor-pointer mx-auto mb-2"
           />
-          <span className="font-bold mb-2">{session.user?.name!}</span>
         </div>
       )}
     </div>
